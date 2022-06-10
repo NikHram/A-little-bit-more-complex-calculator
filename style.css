@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    transform: scale(2);
+}
+
+input {
+    border-radius: 10px;
+    border: none;
+    height: 20px;
+}
+
+#operatorDecider {
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.bold_text {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.light_text {
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    font-size: 14px;
+    text-align: left;
+    margin: 0 0 5px 0;
+}
+
+.btn {
+    width: 365px;
+    height: 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.legend {
+    width: 365px;
+}
+
+ul {
+    margin-top: 20px;
+    text-align: left;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.legend ul,
+.legend li {
+    text-align: center;
+}
+
+#answer {
+    background-color: white;
+    text-align: center;
+    color: red;
+    margin: 20px 0;
+    width: 365px;
+}
+
+#answer::placeholder {
+    color: red;
+    opacity: 1;
+}
