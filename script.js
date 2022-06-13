@@ -7,21 +7,20 @@ commandField.addEventListener("keypress",  (e) => {
         if (commandField.value === "/plus") {
             output = +document.getElementById("number1").value + +document.getElementById("number2").value;
             answer.setAttribute("value", output);
-        }
-
-        if (commandField.value === "/minus") {
+        } else if (commandField.value === "/minus") {
             output = +document.getElementById("number1").value - +document.getElementById("number2").value;
             answer.setAttribute("value", output);
-        }
-
-        if (commandField.value === "/divide") {
+        } else if (commandField.value === "/divide") {
             output = +document.getElementById("number1").value / +document.getElementById("number2").value;
             answer.setAttribute("value", output);
-        }
-
-        if (commandField.value === "/multiply") {
+        } else if (commandField.value === "/multiply") {
             output = +document.getElementById("number1").value * +document.getElementById("number2").value;
             answer.setAttribute("value", output);
+        } else {
+            document.querySelector(".alert").style.display = "flex";
+            setTimeout(() => {
+                document.querySelector(".alert").style.display = "none";
+            }, 5000);
         }
     }
 });

@@ -5,6 +5,8 @@ html, body {
     height: 100%;
     overflow: hidden;
     background-color: black;
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -53,7 +55,7 @@ p {
     margin: 0 0 5px 0;
 }
 
-.btn {
+.operatorDecider_container {
     width: 365px;
     height: 25px;
     border-radius: 8px;
@@ -101,3 +103,16 @@ li {
     color: red;
     opacity: 1;
 }
+
+.alert {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
